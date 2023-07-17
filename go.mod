@@ -1,3 +1,3 @@
-module github.com/heartleo/test
+module github.com/heartleo/echo
 
-go 1.19
+go 1.20
