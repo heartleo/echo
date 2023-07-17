@@ -2,4 +2,4 @@
 
 set -ex
 
-docker push heartleo/test:latest
+docker push heartleo/echo:latest
