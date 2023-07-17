@@ -11,9 +11,8 @@ import (
 )
 
 var (
-	port = flag.String("port", "8080", "port to listen on")
+	addr = flag.String("addr", ":8080", "listen addr")
 )
-
 
 func main() {
 	flag.Parse()
@@ -32,8 +31,8 @@ func main() {
 	})
 
 	go func() {
-		log.Println("listening on port", *port)
-		http.ListenAndServe(*port, nil)
+		log.Println("listening on", *addr)
+		http.ListenAndServe(*addr, nil)
 	}()
 
 	log.Println("start")
