@@ -6,7 +6,7 @@ before:
 builds:
   - binary: echo
     env:
-      - CGO_ENABLED=0
+      - CGO_ENABLED=1
     main: ./cmd/echo/main.go
     goos:
       - windows
