@@ -2,7 +2,7 @@
 # Make sure to check the documentation at https://goreleaser.com
 before:
   hooks:
-    - go env
+    - go mod tidy
 builds:
   - binary: echo
     env:
